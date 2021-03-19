@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 const yelp = require('yelp-fusion');
-const client = yelp.client('KxE9chw4rrYaPP4P3fCvbkfKJK-ZgaGJmZyGGKbAByRNKWKHgmeGENajXAhlc-ZkCKJ1H4hMmyw10yO7Kg06K3LsZiKdqbtA5neo3QEJiY0pvOQoaqNOV0_Zs1pJYHYx');
+const client = yelp.client('YOUR_API_KEY');
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
