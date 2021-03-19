@@ -3,6 +3,7 @@ import Header from "./header"
 import {BiSearch,BiRestaurant,BiCalendarCheck} from "react-icons/bi"
 
 import {FaWrench,FaTruckMoving} from "react-icons/fa"
+import SearchBar from "./searchBar"
 
 
 function HomeBanner(){
@@ -16,13 +17,7 @@ function HomeBanner(){
             <div className="banner-content container">
                 <h1>ORGANIC FAST FOOD MADE EASY AND HEALTHY</h1>
 
-                <div className="search">
-                    <label>Find</label>
-                    <input type="text" style={{borderRight:"1px solid gray"}} placeholder="restuarants.."/>
-                    <label>Near</label>
-                    <input type="text" placeholder="Cypress,Texas"/>
-                    <span className="icons hover"><BiSearch/></span>
-                </div>
+                <SearchBar />
 
                 <div className="features">
                     <span><span><BiRestaurant /></span>Restuarants</span>
@@ -35,9 +30,9 @@ function HomeBanner(){
 
         <div className="increment-counter">
             <div className="counter-container container">
-                <span><span > 1000+ </span><em>Restuarants</em></span>
-                <span><span > 200,000</span><em>People Served</em></span>
-                <span><span>100,000 </span><em>Registered Users</em></span>
+                <p> 1000+ <em>Restuarants</em></p>
+                <p> 200,000 <em>People Served</em></p>
+                <p>100,000 <em>Users</em></p>
             </div>
         </div>
 

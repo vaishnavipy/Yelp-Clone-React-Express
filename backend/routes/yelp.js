@@ -16,7 +16,7 @@ router.post('/business/search', function(req, res, next) {
     
   
  client.search(req.body).then(response => {
-  res.json(response.jsonBody.businesses[0].name);
+  res.json(response.jsonBody.businesses);
 }).catch(e => {
   console.log(e);
 }); 

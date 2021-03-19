@@ -5,9 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter as Router} from "react-router-dom"
 
+import {SearchContextPorvider} from "./searchContext"
+
 ReactDOM.render(
   <Router>
-    <App />
+    <SearchContextPorvider>
+        <App />
+    </SearchContextPorvider>
   </Router>
   ,
   document.getElementById('root')
