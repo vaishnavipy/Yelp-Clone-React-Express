@@ -1,16 +1,26 @@
-import React, { useState } from "react"
+import React, { useContext, useState } from "react"
 import { useParams } from "react-router"
 import { useEffect } from "react/cjs/react.development";
 import MainHeader from "../components/mainHeader";
-import BusinessResults from "../components/businessResults"
 import Footer from "../components/footer"
-import Pagination from "../components/pagination"
-const axios = require("axios")
+import BusinessResults from "../components/businessResults"
+import { searchContext } from "../searchContext";
+
 
 
 function BusinessSearchPage(){
 
-   
+    const {term,location} = useParams();
+
+    const {fetchYelpData} = useContext(searchContext);
+
+   useEffect(()=>{
+        fetchYelpData(term,location)
+   },[])
+
+   useEffect(()=>{
+    fetchYelpData(term,location)
+   },[term,location])
 
 
     return(

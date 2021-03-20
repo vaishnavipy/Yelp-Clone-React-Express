@@ -14,6 +14,7 @@ function SearchBar(){
     function handleSearchBusiness(){
 
         history.push(`/search/term=${input.term}&location=${input.location}`)
+        
 
     }
 

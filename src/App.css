@@ -435,6 +435,11 @@ li:hover {
   height: 100vh;
   overflow: scroll; }
 
+.selected {
+  background-color: #E7F2F3;
+  color: #048390;
+  border: 1px solid #048390; }
+
 .filter-title {
   padding: 0;
   margin: 0.5em 0;
@@ -646,5 +651,16 @@ li:hover {
 
 .active-page {
   color: black; }
+
+/*-------------PAGINATION----------------*/
+.restuarant-banner {
+  height: 60vh;
+  width: 100vw;
+  overflow: visible; }
+
+.restuarant-banner img {
+  width: 33.3%;
+  height: 100%;
+  object-fit: cover; }
 
 /*# sourceMappingURL=App.css.map */
