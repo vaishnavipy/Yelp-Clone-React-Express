@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { useParams } from "react-router"
+import { useHistory, useParams } from "react-router"
 import { useEffect } from "react/cjs/react.development";
 import SearchBar from "./searchBar";
 import {IoFastFoodOutline} from "react-icons/io5"
@@ -11,6 +11,8 @@ import logo from "../images/logo.png"
 
 
 function MainHeader(){
+
+    const history = useHistory()
 
     const SUBHEADER_LINKS = [
         {
@@ -46,12 +48,16 @@ function MainHeader(){
         )
     })
 
+    function goToHomePage(){
+        history.push("/")
+    }
+
   
     
     return(
         <div >
             <div className="col-6-header">
-                <div className="logo-mainHeader"><img src={logo}/></div>
+                <div className="logo-mainHeader" onClick={goToHomePage}><img src={logo}/></div>
                 <SearchBar />
                 <p className="links">For Businesses</p>
                 <p className="links">Write a Review</p>

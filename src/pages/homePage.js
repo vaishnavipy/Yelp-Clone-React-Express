@@ -5,6 +5,8 @@ import dishImg from "../images/dish.png"
 import Footer from "../components/footer"
 import restuarantImg from "../images/restuarant.png"
 import getStars from "../utils/getStars"
+import { useContext } from "react/cjs/react.development"
+import { searchContext } from "../searchContext"
 const axios = require("axios");
 
 
@@ -14,6 +16,8 @@ function HomePage(){
 
 
     const [featured,setFeatured] = useState([])
+
+    const {showBusinessDetails} = useContext(searchContext)
 
     useEffect(()=>{
        
@@ -31,7 +35,7 @@ function HomePage(){
 
         const rating_arr = new Array(5).fill(null)
         return(
-            <div className="featured-card" key={i}>
+            <div className="featured-card" key={i} onClick={() => {showBusinessDetails(obj.alias,obj.id)}}>
                             <div className="featured-card-img">
                                 <img src={obj.image_url}/>
                             </div>

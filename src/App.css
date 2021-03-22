@@ -599,19 +599,14 @@ li:hover {
   justify-content: space-between;
   gap: 10px; }
 
-.other-details {
-  width: 70%; }
-
 .other-details h3 {
   padding: 0;
   margin: 0;
   margin-bottom: 0.3em; }
 
 .restuarant-address {
-  width: 30%;
   text-align: right;
-  color: #888692;
-  word-wrap: break-word; }
+  color: #888692; }
 
 .restuarant-address p {
   margin: 0;
@@ -652,15 +647,155 @@ li:hover {
 .active-page {
   color: black; }
 
-/*-------------PAGINATION----------------*/
+/*-------------RESTUARANT BANNER----------------*/
 .restuarant-banner {
   height: 60vh;
   width: 100vw;
-  overflow: visible; }
+  position: relative; }
+
+.overlay::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.3);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
 
 .restuarant-banner img {
   width: 33.3%;
+  height: 100%; }
+
+.banner-text {
+  position: absolute;
+  left: 150px;
+  color: white;
+  bottom: 20px;
+  z-index: 2; }
+
+.banner-text h1 {
+  font-size: 2.5rem;
+  margin: 0.2em 0; }
+
+.banner-text p {
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 0;
+  margin: 0.2em 0; }
+
+.green {
+  color: darkgreen; }
+
+/*-------------RESTUARANT DETAILS----------------*/
+.restuarant-details {
+  display: grid;
+  grid-template-columns: 1fr 32%;
+  column-gap: 20px;
+  width: 100vw;
+  margin: 0 auto;
+  padding: 0; }
+
+.details-left {
+  text-align: left; }
+
+.accordion {
+  display: grid;
+  width: 100%;
+  grid-template-columns: auto auto auto;
+  text-align: center;
+  margin: 0; }
+
+.accordion h3 {
+  padding: 1em 0;
+  cursor: pointer;
+  margin: 0;
+  transition: color 0.5s; }
+
+.accordion h3:hover {
+  color: #F43939; }
+
+.accordion-content-container {
+  position: relative; }
+
+.accordion-content {
+  position: absolute;
+  display: none;
+  padding: 1em;
+  width: 100%;
+  margin-bottom: 2em;
+  top: 0; }
+
+.active-accordion-content {
+  display: block;
+  background-color: white; }
+
+.cart {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background-color: white;
+  min-height: 200px;
+  padding: 1em;
+  row-gap: 10px;
+  min-height: 600px; }
+
+.active-accordion {
+  background-color: white;
+  color: #F43939; }
+
+.menu-flex {
+  margin: 0;
+  display: flex;
+  justify-content: space-between; }
+
+.menu-items-flex {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  column-gap: 20px;
+  cursor: pointer; }
+
+.menu-items-flex img {
+  object-fit: cover;
+  height: 100%; }
+
+.menu-items-flex h4 {
+  margin: 0.5em 0; }
+
+.cart-flex {
+  display: flex;
+  justify-content: space-between;
+  align-content: center; }
+
+.cart-flex div {
+  align-self: center; }
+
+.delete-cart-item {
+  color: red;
+  cursor: pointer; }
+
+.cart-total {
+  background-color: lightgrey;
+  padding: 0.7em; }
+
+.cart-items {
+  max-height: 400px;
+  overflow: scroll; }
+
+.review-flex {
+  display: flex;
+  gap: 10px; }
+
+.review-user-img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 1px solid lightgray; }
+
+.review-user-img img {
+  border-radius: 50%;
   height: 100%;
+  width: 100%;
   object-fit: cover; }
 
 /*# sourceMappingURL=App.css.map */

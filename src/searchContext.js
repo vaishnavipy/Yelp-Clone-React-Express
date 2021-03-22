@@ -1,6 +1,6 @@
 import React,{useState} from "react"
 import { useEffect } from "react/cjs/react.development";
-import {useParams} from "react-router-dom";
+import {useHistory, useParams} from "react-router-dom";
 const axios = require("axios")
 const searchContext = React.createContext();
 
@@ -12,6 +12,11 @@ function SearchContextPorvider({children}){
    const [urlParams,setUrlParams] = useState({term:"",location:"",price:"",category:""})
 
     const [result,setResult] = useState([]);
+
+    const [cartArr,setCartArr] = useState([])
+
+    const history = useHistory()
+
 
     function changeActivePage(no){
         setActivePage(no)
@@ -46,11 +51,22 @@ console.log("fetch")
        
     },[activePage])
 
-   
+  function handleAddToCart(item){
+       setCartArr(prevState => [...prevState,item])
+   }
+   function deleteCartItem(index){
+
+    setCartArr(prevState => prevState.filter((elm,i) => i !== index))
+
+   }
+
+   function showBusinessDetails(name,id){
+    history.push(`/biz/name=${name}/id=${id}`)
+}
 
 
     return(
-        <searchContext.Provider value={{activePage,changeActivePage,result,fetchYelpData}}>
+        <searchContext.Provider value={{activePage,changeActivePage,result,fetchYelpData,cartArr,handleAddToCart,deleteCartItem,showBusinessDetails}}>
             {children}
         </searchContext.Provider>
     )

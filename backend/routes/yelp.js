@@ -39,5 +39,16 @@ client.business(req.body.alias).then(response => {
 }); 
 
 
+router.post("/business/reviews",function(req,res,body){
+    
+        client.reviews(req.body.alias).then(response => {
+            res.json(response.jsonBody);
+        }).catch(e => {
+            console.log(e)
+        })
+    
+})
+
+
 
 module.exports = router;

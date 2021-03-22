@@ -12,17 +12,14 @@ function Results(){
 
     const {term,location} = useParams();
 
-    let history = useHistory();
 
-    const {activePage,result,fetchYelpData} = useContext(searchContext);
+    const {activePage,result,fetchYelpData,showBusinessDetails} = useContext(searchContext);
 
     useEffect(()=>{
         fetchYelpData(term,location);
     },[])
 
-    function showBusinessDetails(name,id){
-        history.push(`/biz/name=${name}/id=${id}`)
-    }
+    
 
     /*  let start = ((activePage-1)*20) ; let end = activePage*20; */
 
