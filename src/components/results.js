@@ -5,22 +5,14 @@ import getStars from "../utils/getStars"
 import {TiTick} from "react-icons/ti"
 import Pagination from "./pagination"
 import { searchContext } from "../searchContext";
-const axios = require("axios")
+
 
 
 function Results(){
 
-    const {term,location} = useParams();
+    const {activePage,result,showBusinessDetails} = useContext(searchContext);
 
-
-    const {activePage,result,fetchYelpData,showBusinessDetails} = useContext(searchContext);
-
-    useEffect(()=>{
-        fetchYelpData(term,location);
-    },[])
-
-    
-
+   
     /*  let start = ((activePage-1)*20) ; let end = activePage*20; */
 
     const restuarants = result.map((rest,i) => {
