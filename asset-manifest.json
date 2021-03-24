@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/Yelp-Clone-React-Express/static/css/main.b13800ec.chunk.css",
+    "main.js": "/Yelp-Clone-React-Express/static/js/main.b1083beb.chunk.js",
+    "main.js.map": "/Yelp-Clone-React-Express/static/js/main.b1083beb.chunk.js.map",
+    "runtime-main.js": "/Yelp-Clone-React-Express/static/js/runtime-main.8a3f7580.js",
+    "runtime-main.js.map": "/Yelp-Clone-React-Express/static/js/runtime-main.8a3f7580.js.map",
+    "static/js/2.c6f9ed01.chunk.js": "/Yelp-Clone-React-Express/static/js/2.c6f9ed01.chunk.js",
+    "static/js/2.c6f9ed01.chunk.js.map": "/Yelp-Clone-React-Express/static/js/2.c6f9ed01.chunk.js.map",
+    "static/js/3.e2f7b3ae.chunk.js": "/Yelp-Clone-React-Express/static/js/3.e2f7b3ae.chunk.js",
+    "static/js/3.e2f7b3ae.chunk.js.map": "/Yelp-Clone-React-Express/static/js/3.e2f7b3ae.chunk.js.map",
+    "index.html": "/Yelp-Clone-React-Express/index.html",
+    "static/css/main.b13800ec.chunk.css.map": "/Yelp-Clone-React-Express/static/css/main.b13800ec.chunk.css.map",
+    "static/js/2.c6f9ed01.chunk.js.LICENSE.txt": "/Yelp-Clone-React-Express/static/js/2.c6f9ed01.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/Yelp-Clone-React-Express/static/media/food3.7075ad4f.jpg",
+    "static/media/delivery.5f14403f.png": "/Yelp-Clone-React-Express/static/media/delivery.5f14403f.png",
+    "static/media/dish.f8e4e954.png": "/Yelp-Clone-React-Express/static/media/dish.f8e4e954.png",
+    "static/media/logo.52e1fa8d.png": "/Yelp-Clone-React-Express/static/media/logo.52e1fa8d.png",
+    "static/media/restuarant.b639d2a1.png": "/Yelp-Clone-React-Express/static/media/restuarant.b639d2a1.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8a3f7580.js",
+    "static/js/2.c6f9ed01.chunk.js",
+    "static/css/main.b13800ec.chunk.css",
+    "static/js/main.b1083beb.chunk.js"
+  ]
+}
