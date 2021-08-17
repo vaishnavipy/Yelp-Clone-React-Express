@@ -1,6 +1,6 @@
 # YELP CLONE IN REACT WITH EXPRESS SERVER
 
-![yelp](https://user-images.githubusercontent.com/8887734/108117644-cd653500-7062-11eb-9ead-4cd290c1f486.gif)
+![yelp]()
 
 # Technologies used:
 - Yelp Fusion API to fetch data.
